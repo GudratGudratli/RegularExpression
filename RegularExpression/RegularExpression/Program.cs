@@ -1,12 +1,12 @@
-﻿int n, r, sum = 0, temp;
+﻿int value, r, sum = 0, temp;
 Console.Write("Eded daxil edin: ");
-n = int.Parse(Console.ReadLine());
-temp = n;
-while (n > 0)
+value = int.Parse(Console.ReadLine());
+temp = value;
+while (value > 0)
 {
-    r = n % 10;
+    r = value % 10;
     sum = (sum * 10) + r;
-    n /= 10;
+    value /= 10;
 }
 if (temp == sum)
     Console.Write("Eded polindromdur.");
